@@ -1,0 +1,99 @@
+.container{
+    margin: 5%;
+}
+
+
+
+
+
+/* Reset some default styling
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #343541;
+    color: #D1D5DB;
+}
+
+header,
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.input-form {
+    max-width: 400px;
+    margin: 6% auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #D1D5DB;
+    font-weight: 600;
+    background-color: #343541;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+a {
+    color: darkblue;
+    text-decoration: double;
+    font-weight: 600;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #202123;
+    cursor: auto;
+    color: #ececf1;
+    padding: 7px;
+}
+
+button {
+    background-color: darkolivegreen;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.user {
+    background-color: #343541;
+    padding: 40px;
+}
+
+#user {
+    color: #ececf1;
+}
+
+.bot {
+    background-color: #444654;
+    padding: 40px;
+}
+
+.bott {
+    color: #D1D5DB;
+}
+
+code {
+    border-radius: 10px;
+} */

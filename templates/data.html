@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bot DB</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap/bootstrap.min.css')}}">
+    <script src="{{ url_for('static', filename='js/showdown.min.js')}}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/highlight.css')}}">
+    <script src="{{ url_for('static', filename='js/highlight_min.js')}}"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">Bot DB</h1>
+        </div>
+    </header>
+
+    <div class="container py-5">
+        {% for x in data %}
+        <section class="mb-4 p-4" style="background-color: #eee;">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between p-3">
+                            <p class="fw-bold mb-0">User</p>
+                            <p class="text-muted small mb-0">
+                                <img src="{{url_for('static',filename='images/user.png')}}" alt="avatar"
+                                     class="rounded-circle d-flex align-self-start me-3 shadow-1-strong" width="30">
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-0">
+                                {{ x[1] }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between p-3">
+                            <p class="fw-bold mb-0">Chat Bot</p>
+                            <p class="text-muted small mb-0">
+                                <img src="{{url_for('static',filename='images/gpt.png')}}" alt="avatar"
+                                     class="rounded-circle d-flex align-self-start me-3 shadow-1-strong" width="30">
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-0">
+                                <div class="markdownContent bott">{{ x[2] }}</div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="/data/{{ x[0] }}" class="btn btn-danger mt-3">Delete</a>
+            <a class="btn btn-warning mt-3 none">Update</a>
+        </section>
+        {% endfor %}
+    </div>
+
+
+   <footer class="footer">
+    <div class="container">
+        <p>&copy; 2023. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="{{url_for('static',filename='js/bootstrap/bootstrap.bundle.min.js')}}"></script>
+<script src="{{url_for('static',filename='js/script.js')}}"></script>
+<script src="{{url_for('static',filename='js/md_viewer.js')}}"></script>
+
+</body>
+</html>
