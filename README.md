@@ -2,14 +2,14 @@
 A simple Flask app to store the data you need in ChatGpt
 
 # Create DB
-     ```
-     python create_db.py
-     ```
+```
+python create_db.py
+```
 
 # Run the application
-    ```
-    python app.py
-    ```
+```
+python app.py
+```
 
 And the server starts at http://127.0.0.1:5000/, it accepts two values.
 1) user_input
